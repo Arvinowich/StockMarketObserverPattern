@@ -47,7 +47,7 @@ public class Program
             Console.WriteLine("Now insert your first stock, use enter to seperate the follwing: Stock name, Stock Ticker, Stock Price: ");
             string userInputtedStockName = Console.ReadLine();
             string userInputtedStockTicker = Console.ReadLine();
-            int userInputtedStocPrice = Convert.ToInt32(Console.ReadLine());
+            double userInputtedStocPrice = Convert.ToDouble(Console.ReadLine());
 
             SubjectData sub = new SubjectData(userInputtedStocPrice, userInputtedStockName, userInputtedStockTicker);
             Stock stock = new Stock(sub);
@@ -62,7 +62,7 @@ public class Program
             Console.WriteLine("Now update your first stock, use enter to seperate the follwing: Stock name, Stock Ticker, Stock Price: ");
             string userInputtedStockNameUPDATE = Console.ReadLine();
             string userInputtedStockTickerUPDATE = Console.ReadLine();
-            int userInputtedStocPriceUPDATE = Convert.ToInt32(Console.ReadLine());
+            double userInputtedStocPriceUPDATE = Convert.ToDouble(Console.ReadLine());
 
             SubjectData sub9 = new SubjectData(userInputtedStocPriceUPDATE, userInputtedStockNameUPDATE, userInputtedStockTickerUPDATE);
             Stock stock1 = new Stock(sub9);
